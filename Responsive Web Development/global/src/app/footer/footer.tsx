@@ -13,8 +13,8 @@ const Footer = () => {
                     </ul>
                     <ul>
                         <span>RMs:</span>
-                        <li>111111</li>
-                        <li>222222</li>
+                        <li>96496</li>
+                        <li>552628</li>
                         <li>552473</li>
                     </ul>
                     <ul>

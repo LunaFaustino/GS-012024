@@ -65,6 +65,7 @@ create table t_cadastropf(
 );
 
 drop table t_cadastropf;
+delete t_cadastropf;
 
 create table t_cadastropj(
     cnpj varchar2(18),
@@ -74,3 +75,4 @@ create table t_cadastropj(
 );
 
 drop table t_cadastropj;
+delete t_cadastropj;
