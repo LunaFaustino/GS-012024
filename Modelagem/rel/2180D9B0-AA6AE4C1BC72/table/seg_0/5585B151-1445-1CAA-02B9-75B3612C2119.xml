@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5585B151-1445-1CAA-02B9-75B3612C2119" name="t_empresa">
+<createdBy>Luna</createdBy>
+<createdTime>2024-06-04 16:21:16 UTC</createdTime>
+<generatorID>C9FABBE0-87DC-1963-851D-5949E6C0DE43</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cnpj" id="0933D783-5ACA-6E69-794B-A1170986C359">
+<createdBy>Luna</createdBy>
+<createdTime>2024-06-04 16:21:16 UTC</createdTime>
+<generatorID>39F4C10E-7E17-B404-7F7C-97404E626403</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18</dataTypeSize>
+<ownDataTypeParameters>18,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nomeFant" id="A75C7819-D932-8A45-4022-D2D6F16EAE8D">
+<createdBy>Luna</createdBy>
+<createdTime>2024-06-04 16:21:16 UTC</createdTime>
+<generatorID>6D27F6DF-B9F0-FD93-0C5A-8908DCFEDB3C</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="razaoSoc" id="8DB2BAE8-302A-4202-F9EF-644EEA930E23">
+<createdBy>Luna</createdBy>
+<createdTime>2024-06-04 16:21:16 UTC</createdTime>
+<generatorID>5B71B9DD-A14A-70DF-448C-491EF105DCFE</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="t_representante_cpf" id="95356AC5-CF9C-DBDC-F3F5-23AC5D5DC63E">
+<createdBy>Luna</createdBy>
+<createdTime>2024-06-04 16:21:16 UTC</createdTime>
+<generatorID>9F347957-182B-9EB0-DB2C-A35E9E37F58F</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C9D726D8-C35C-843B-00E2-F0F441752F1D" referredColumn="8F86B7F1-B913-8DFC-1093-D7ACD2700DAB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7BEF003E-DF26-9396-C67F-7BCB661924E3" name="t_empresa_PK">
+<createdBy>Luna</createdBy>
+<createdTime>2024-06-04 16:21:16 UTC</createdTime>
+<generatorID>DBB66EC4-1DE4-5CEC-0EB9-F716C1205963</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0933D783-5ACA-6E69-794B-A1170986C359"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DC0AC5C-49B5-322C-7F8C-DE1AAAE137A1" name="t_empresa_t_representante_FK">
+<createdBy>Luna</createdBy>
+<createdTime>2024-06-04 16:21:16 UTC</createdTime>
+<generatorID>3A293CA7-0326-FD2B-6B49-8AAFDD6637B9</generatorID>
+<ownerDesignName>Modelagem</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95356AC5-CF9C-DBDC-F3F5-23AC5D5DC63E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
