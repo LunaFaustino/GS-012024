@@ -2,13 +2,26 @@
 import { useState } from 'react';
 import "../../../public/css/reciclagem.css";
 
+interface UserForm {
+    nome: string;
+    email: string;
+    cep: string;
+}
+
+interface CompanyForm {
+    cnpj: string;
+    nomeFant: string;
+    email: string;
+    cep: string;
+}
+
 const Reciclagem = () => {
-    const [userForm, setUserForm] = useState({ nome: '', email: '', cep: '' });
-    const [companyForm, setCompanyForm] = useState({ cnpj: '', nomeFant: '', email: '', cep: '' });
+    const [userForm, setUserForm] = useState<UserForm>({ nome: '', email: '', cep: '' });
+    const [companyForm, setCompanyForm] = useState<CompanyForm>({ cnpj: '', nomeFant: '', email: '', cep: '' });
     const [userSuccessMessage, setUserSuccessMessage] = useState('');
     const [companySuccessMessage, setCompanySuccessMessage] = useState('');
 
-    const handleChange = (e, formType) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>, formType: string) => {
         const { name, value } = e.target;
         if (formType === 'user') {
             setUserForm({ ...userForm, [name]: value });
@@ -17,11 +30,11 @@ const Reciclagem = () => {
         }
     };
 
-    const validateForm = (formData) => {
+    const validateForm = (formData: UserForm | CompanyForm) => {
         return Object.values(formData).every(value => value.trim() !== '');
     };
 
-    const handleSubmit = async (e, formType) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>, formType: string) => {
         e.preventDefault();
         const url = formType === 'user' 
             ? 'http://localhost:8080/GlobalSolution/cadastropf' 
