@@ -3,7 +3,7 @@
 Repositório criado para realizar as entregas de DOMAIN DRIVEN DESIGN e RESPONSIVE WEB DEVELOPMENT.
 
 Links:
-https://sustent-app.vercel.app/
+https://sustent-app.vercel.app/  | https://youtu.be/rKsYQge6ZoA?si=VUCbG2gf4bMc-aCF
 
 Integrantes:
 
