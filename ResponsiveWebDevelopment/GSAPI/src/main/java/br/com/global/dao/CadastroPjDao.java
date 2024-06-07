@@ -11,7 +11,7 @@ import br.com.global.beans.CadastroPJ;
 import br.com.global.connections.ConnectionFactory;
 
 public class CadastroPjDao {
-	
+
 	public Connection minhaConexao;
 
 	public CadastroPjDao() throws ClassNotFoundException, SQLException {

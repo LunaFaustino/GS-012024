@@ -19,12 +19,13 @@ import br.com.global.bo.CadastroPjBo;
 
 @Path("/cadastropj")
 public class CadastroPjResource {
-	
+
 	private CadastroPjBo cadastroPjBo = new CadastroPjBo();
-	
+
 	@POST
 	@Consumes(javax.ws.rs.core.MediaType.APPLICATION_JSON)
-	public Response inserirRs(CadastroPJ cadastroPj, @Context UriInfo uriInfo) throws ClassNotFoundException, SQLException {
+	public Response inserirRs(CadastroPJ cadastroPj, @Context UriInfo uriInfo)
+			throws ClassNotFoundException, SQLException {
 		cadastroPjBo.inserirBo(cadastroPj);
 		UriBuilder builder = uriInfo.getAbsolutePathBuilder();
 		builder.path(cadastroPj.getCnpj());

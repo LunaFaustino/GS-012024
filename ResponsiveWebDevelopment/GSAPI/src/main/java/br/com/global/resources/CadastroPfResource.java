@@ -19,12 +19,13 @@ import br.com.global.bo.CadastroPfBo;
 
 @Path("/cadastropf")
 public class CadastroPfResource {
-	
+
 	private CadastroPfBo cadastroPfBo = new CadastroPfBo();
-	
+
 	@POST
 	@Consumes(javax.ws.rs.core.MediaType.APPLICATION_JSON)
-	public Response inserirRs(CadastroPF cadastroPf, @Context UriInfo uriInfo) throws ClassNotFoundException, SQLException {
+	public Response inserirRs(CadastroPF cadastroPf, @Context UriInfo uriInfo)
+			throws ClassNotFoundException, SQLException {
 		cadastroPfBo.inserirBo(cadastroPf);
 		UriBuilder builder = uriInfo.getAbsolutePathBuilder();
 		builder.path(cadastroPf.getNome());
